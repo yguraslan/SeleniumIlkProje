@@ -28,14 +28,6 @@ public class Day02_TitleUrlTest {
         driver.quit();
 
 
-
-
-
-
-
-
     }
-
-
 
 }
