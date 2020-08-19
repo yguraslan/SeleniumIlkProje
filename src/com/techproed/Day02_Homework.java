@@ -48,7 +48,7 @@ public class Day02_Homework {
         driver.navigate().back();
         driver.navigate().refresh();
         driver.manage().window().maximize();
-        driver.close();
+        driver.quit();
 
     }
 }
