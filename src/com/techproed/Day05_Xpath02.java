@@ -5,28 +5,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Day04_FindElements {
+public class Day05_Xpath02 {
     public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gebruiker\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();// webDriver yerine driver diyebiliriz
 
-
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         driver.manage().window().maximize();
         driver.get("http://a.testaddressbook.com/");
 
-        // a tagname sahip tüm webelementleri bulalım.
-        // if-else , for-foreach - methodlar - nesneoluşturma - arrays
+      //  WebElement welcomeYazisi = driver.findElement(By.tagName("h1"));
 
-        List<WebElement> listem = driver.findElements(By.tagName("a"));
+        //xpath kullaniminda attribute kullanmaya gerek duymazsaniz
+        //sadece tagName yazilarak da webelement bulunabilir
+  WebElement welcomeYazisi = driver.findElement(By.xpath("//h1"));
+        System.out.println(welcomeYazisi.getText());
 
-        for (WebElement w : listem) {  // for(int i = 0 ; i < listem.size(); i++)
-            System.out.println(w.getText());
-        }
-      driver.quit();
+
+
     }
 }

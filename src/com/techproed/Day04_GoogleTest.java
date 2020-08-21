@@ -31,6 +31,6 @@ public class Day04_GoogleTest {
         WebElement alisverisLinki = driver.findElement(By.partialLinkText("Alışveriş"));
         alisverisLinki.click();
 
-
+        driver.quit();
     }
 }
