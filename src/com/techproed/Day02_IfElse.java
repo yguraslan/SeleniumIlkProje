@@ -7,6 +7,7 @@ public class Day02_IfElse {
     public static void main(String[] args) {
 
 
+
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gebruiker\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -21,6 +22,11 @@ public class Day02_IfElse {
         }else{
             System.out.println("Car kelimesini İÇERMİYOR.");
         }
-     driver.quit();
+        driver.quit();
+
+
+
+
     }
+
 }

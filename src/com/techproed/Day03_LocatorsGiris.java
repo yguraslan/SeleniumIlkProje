@@ -29,7 +29,7 @@ public class Day03_LocatorsGiris {
         //webelementimize tikladik.
         signInLink.click();
 
-      //email kutusunu bulalim
+        //email kutusunu bulalim
         WebElement emailKutusu = driver.findElement(By.id("session_email"));
         //emailKutusuna yazi gonderelim
         emailKutusu.sendKeys("testtechproed@gmail.com");
@@ -43,15 +43,13 @@ public class Day03_LocatorsGiris {
         WebElement signInButonu = driver.findElement(By.name("commit"));
         signInButonu.click();
 
-    String baslik = driver.getTitle();
-    if(baslik.equals("Address Book")){
-        System.out.println("Giris basarili");
-    }else{
-        System.out.println("Giris basarisiz");
-    }
+        String baslik = driver.getTitle();
+        if(baslik.equals("Address Book")){
+            System.out.println("Giris basarili");
+        }else{
+            System.out.println("Giris basarisiz");
+        }
 
 
     }
-
-
 }

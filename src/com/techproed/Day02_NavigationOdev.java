@@ -21,11 +21,5 @@ public class Day02_NavigationOdev {
         driver.quit();
 
 
-
-
-
-
-
-
     }
 }

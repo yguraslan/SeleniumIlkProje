@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Day02_NavigationMethods {
     public static void main(String[] args) {
 
+
         //Java projemize chromedriver i tanittik
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Gebruiker\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
@@ -27,8 +28,23 @@ public class Day02_NavigationMethods {
         // eğer forward yaparsak, amazona geri gideriz.
         webDriver.navigate().forward();
 
-       // navigate().refresh(); methodu sayfayi yenilemeye yariyor
+        // navigate().refresh(); methodu sayfayi yenilemeye yariyor
         webDriver.navigate().refresh();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
 }

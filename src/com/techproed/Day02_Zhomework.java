@@ -3,10 +3,9 @@ package com.techproed;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day02_Homework {
-
+public class Day02_Zhomework {
     public static void main(String[] args) {
-        /* 1. Yeni bir class oluşturun :Homework
+          /* 1. Yeni bir class oluşturun :Homework
         2. ChromeDriver'ı kullanarak facebook'a gidin ve sayfa başlığının(Page Title) "facebook" olup olmadığını doğrulayın, Değilse, doğru başlığı(Actual title) yazdırın.
         3. Sayfa URL'sinin facebook içerip içermediğini(contains), Değilse doğru URL'yi(Actual url) yazdırın.
         4. Ardından Navigate to https://www.walmart.com/

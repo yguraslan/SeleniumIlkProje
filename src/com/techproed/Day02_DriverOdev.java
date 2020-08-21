@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day02_DriverOdev {
 
+
+
     public static void main(String[] args) {
         //1) ilk once google.com agidelim
         //2) sayfanin title ni alalim ve ekrana yazdiralim
@@ -49,3 +51,4 @@ public class Day02_DriverOdev {
 
     }
 }
+
