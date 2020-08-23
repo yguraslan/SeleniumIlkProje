@@ -35,6 +35,7 @@ public class Day06_Facebook {
         WebElement sifreKutusu= driver.findElement(By.xpath("//*[@type='password']"));
         sifreKutusu.sendKeys("Test1234");
 
+        sifreKutusu.submit();// bunu yazarak sorunu cozduk
         //3.adim
         //login butonunu bulalim
         //<button value="1" class="_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy"
@@ -43,8 +44,9 @@ public class Day06_Facebook {
        // WebElement loginButonu = driver.findElement(By.cssSelector("#loginbutton"));//
        // WebElement loginButonu = driver.findElement(By.id("#loginbutton"));
        // WebElement loginButonu = driver.findElement(By.cssSelector("#loginbutton"));
-        WebElement loginButonu = driver.findElement(By.xpath("//button"));
-        loginButonu.click();
+       // WebElement loginButonu = driver.findElement(By.xpath("//button"));
+       // loginButonu.click();
+      // usttekiler hep hata verdi
 
         //Burada 10 saniye bekleyecek
         try {
